@@ -9,6 +9,7 @@ try:
         add_button.click()
     time.sleep(1)
     delete_buttons = driver.find_elements(By.XPATH, "//button[text()='Delete']")
+    print(len(delete_buttons))
 finally:
     driver.quit()
 
