@@ -11,5 +11,6 @@ green_box = WebDriverWait(driver, 30).until(
         EC.visibility_of_element_located((By.CSS_SELECTOR, 'p.bg-success'))
     )
 text = green_box.text
+
 print(text)
 driver.quit()
