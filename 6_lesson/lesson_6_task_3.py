@@ -9,5 +9,4 @@ pictures = WebDriverWait(driver, 20).until(
 images = driver.find_elements(By.CSS_SELECTOR, "#image-container img")
 third_image_src = images[2].get_attribute("src")
 print(third_image_src)
-
 driver.quit()
